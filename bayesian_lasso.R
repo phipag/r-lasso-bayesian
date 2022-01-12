@@ -12,8 +12,6 @@ fit_plot <-
   xlab("Car") +
   ylab("Car horsepower [HP]")
 
-mcmc_dens_plots = c()
-
 for (scale in c(0.25, 0.5, 1)) {
   model_bayes <-
     stan_glm(hp ~ mpg + wt + drat + qsec,
